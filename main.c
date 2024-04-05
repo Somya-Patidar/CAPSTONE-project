@@ -347,7 +347,7 @@ void sdetail()
     printf("\n-------------------------------------------------------------------------------------------");
     while (fread(&std, sizeof(std), 1, fp1))
     {
-        printf("\n%-5d%-28s%-23s%-8d", i, std.name, std.rollno, std.section);
+        printf("\n%-5d%-28s%-18s%-5d", i, std.name, std.rollno, std.section);
         i++;
     }
     fclose(fp1);
